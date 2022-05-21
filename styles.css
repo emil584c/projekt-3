@@ -1,9 +1,14 @@
 
+
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Exo+2:wght@500;700&display=swap');
+
+
 :root{
     --clr-primary-300: #F2F2F2;
     --clr-primary-400: #10383A;
     --clr-primary-500: #809292;
 }
+
 
 .bg-white{background-color: var(--clr-primary-300);}
 .bg-green{background-color: var(--clr-primary-400);}
@@ -11,6 +16,9 @@
 .font-white{color: var(--clr-primary-300);}
 .font-green{color: var(--clr-primary-400);}
 .font-lightgreen{color: var(--clr-primary-500);}
+.nav-font{
+    font-family: 'Exo 2', sans-serif;
+}
 
 .text-center{
     text-align: center;
@@ -31,27 +39,118 @@ header,section{
 }
 
 body{
-    font-family: ;
+    font-family: 'Alegreya Sans', sans-serif;
     font-size: 1.3125rem;
     line-height: 1.6;
     font-weight: 400;
 }
 
 p{
+    font-family: sans-serif;
     font-size: 1.3125rem;
-    margin-bottom: 1em}
-
-h1,h2,h3{
-    font-family: ; 
-    font-weight: 900;
-    line-height: 1;
     margin-bottom: 1em;
 }
 
-.profil{
+
+header{
+    text-align: center;
+    width: 100%;
+}
+
+.nav-toggle{
+    display: none;
+}
+
+.nav-toggle-label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 10px;
+    height: 128px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after{
     display: block;
-    max-width: 400px;
-    
+    background: white;
+    height: 2px;
+    width: 2em;
+    border-radius: 2px;
+    position: relative;
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after{
+    content: "";
+    position: absolute;
+}
+
+.nav-toggle-label span::before{
+    bottom: 7px;
+}
+
+.nav-toggle-label span::after{
+    top: 7px;
+}
+
+nav{
+    position: absolute;
+    text-align: left;
+    left: 0;
+    background-color: var(--clr-primary-500);
+    width: 100%;
+    margin-top: 30px;
+    transform: scale(1, 0);
+    transform-origin: top;
+    transition: 400ms ease-in-out;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: 0;
+}
+
+nav li{
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+nav a{
+    color: var(--clr-primary-300);
+    font-size: 21px;
+    text-decoration: none;
+    opacity: 0;
+    transform: 250ms ease-in-out;
+}
+
+nav a:hover{
+    color: blue;
+}
+
+.nav-toggle:checked ~ nav {
+    transform: scale(1,1)
+}
+
+.nav-toggle:checked ~ nav a{
+    opacity: 1;
+}
+
+h1,h2,h3{
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 900;
+    line-height: 1;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.profil{
+    margin: auto;
+    max-width: 300px;
+
 }
 ::before,::after{box-sizing: border-box}
 body,h1,h2,h3,p{margin: 0;}
@@ -86,16 +185,51 @@ body,h1,h2,h3,p{margin: 0;}
     height: 200px;
 }
 
+#intro{
+
+}
 
 
-
-@media (min-width: 760px){
+@media screen and (min-width: 760px){
     .skillsets {
         flex-direction: row;
         max-width: 1000px;
         margin: auto;
     }
-        .split{flex-direction: row}
-        .split >*{flex-basis: 100%}
+    .split{flex-direction: row
+    }
+    .split >*{flex-basis: 100%
+    }
+    .nav-toggle-label{
+        display: none;
+    }
+    header{
+        display:grid;
+        grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
+        
+    }
+    .logo{
+        grid-column: 2 / 3;
+    }
+    nav{
+        all: unset;
+        grid-column: 3/4;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        
+    }
+    nav a{
+        opacity: 1;
+        
+    }
+    nav ul{
+        display: flex;
+        list-style: none;
+    }
+    nav li{
+        margin-left: 3em;
+        margin-bottom: 0;
+    }
     
 }
