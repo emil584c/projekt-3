@@ -9,15 +9,15 @@
 }
 
 
+/* utility classes */
+
 .bg-white{background-color: var(--clr-primary-300);}
 .bg-green{background-color: var(--clr-primary-400);}
 .bg-lightgreen{background-color: var(--clr-primary-500);}
 .font-white{color: var(--clr-primary-300);}
 .font-green{color: var(--clr-primary-400);}
 .font-lightgreen{color: var(--clr-primary-500);}
-.nav-font{
-    font-family: 'Exo 2', sans-serif;
-}
+.nav-font{font-family: 'Exo 2', sans-serif;}
 
 
 .text-center{
@@ -45,11 +45,31 @@ body{
     font-weight: 400;
 }
 
+/* fonts */
+
+h1,h2,h3{
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 900;
+    line-height: 1;
+    margin-bottom: 1em;
+    text-align: center;
+    border: 1px solid red;
+}
+
 p{
     font-family: sans-serif;
     font-size: 1.3125rem;
     margin-bottom: 1em;
 }
+
+#about-me{
+    border: 1px solid red;
+    max-width: 600px;
+    margin: auto;
+    
+}
+
+/* header og nav */
 
 header{
     text-align: center;
@@ -138,17 +158,13 @@ nav a:hover{
     opacity: 1;
 }
 
-h1,h2,h3{
-    font-family: 'Exo 2', sans-serif;
-    font-weight: 900;
-    line-height: 1;
-    margin-bottom: 1em;
-    text-align: center;
-}
+
 
 
 ::before,::after{box-sizing: border-box}
 body,h1,h2,h3,p{margin: 0;}
+
+/* kasser */
 
 .skillsets{
     width: 100%;
@@ -181,14 +197,26 @@ body,h1,h2,h3,p{margin: 0;}
 }
 
 #intro{
-
+    max-width: 480px;
 }
+
+/* billeder og logos */
 
 .profil{
     max-width: 300px;
     display: block;
     margin: auto;
+    border: 1px solid red;
 }
+
+.profil2{
+    max-width: 300px;
+    display: block;
+    margin: auto;
+    border: 1px solid red;
+    position: relative;
+}
+
 
 .logo{
     color: var(--clr-primary-300);
@@ -210,6 +238,10 @@ body,h1,h2,h3,p{margin: 0;}
         max-width: 800px;
         align-items: center;
         margin: auto;
+    }
+    .profil2{
+        margin-right: 100px;
+        position: sticky;
     }
     .split{flex-direction: row
     }
