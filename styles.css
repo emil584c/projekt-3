@@ -1,5 +1,4 @@
 
-
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Exo+2:wght@500;700&display=swap');
 
 
@@ -19,6 +18,7 @@
 .nav-font{
     font-family: 'Exo 2', sans-serif;
 }
+
 
 .text-center{
     text-align: center;
@@ -50,7 +50,6 @@ p{
     font-size: 1.3125rem;
     margin-bottom: 1em;
 }
-
 
 header{
     text-align: center;
@@ -147,11 +146,7 @@ h1,h2,h3{
     text-align: center;
 }
 
-.profil{
-    margin: auto;
-    max-width: 300px;
 
-}
 ::before,::after{box-sizing: border-box}
 body,h1,h2,h3,p{margin: 0;}
 
@@ -189,11 +184,31 @@ body,h1,h2,h3,p{margin: 0;}
 
 }
 
+.profil{
+    max-width: 300px;
+    display: block;
+    margin: auto;
+}
+
+.logo{
+    color: var(--clr-primary-300);
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+}
+
 
 @media screen and (min-width: 760px){
     .skillsets {
         flex-direction: row;
         max-width: 1000px;
+        margin: auto;
+    }
+    .projects{
+        flex-direction: row;
+        justify-content: space-around;
+        max-width: 800px;
+        align-items: center;
         margin: auto;
     }
     .split{flex-direction: row
