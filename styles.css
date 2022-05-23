@@ -35,7 +35,7 @@ header,section{
 
 .split{
     display: flex;
-    flex-direction: column
+    flex-direction: column;
 }
 
 body{
@@ -47,9 +47,18 @@ body{
 
 /* fonts */
 
-h1,h2,h3{
+h1{
     font-family: 'Exo 2', sans-serif;
     font-weight: 900;
+    line-height: 1;
+    margin-bottom: 1em;
+    text-align: center;
+    border: 1px solid red;
+}
+
+h2,h3{
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 700;
     line-height: 1;
     margin-bottom: 1em;
     text-align: center;
@@ -179,6 +188,7 @@ body,h1,h2,h3,p{margin: 0;}
     background-color: var(--clr-primary-500);
     width: 200px;
     height: 200px;
+    padding: 10px;
 }
 
 .projects{
@@ -191,9 +201,10 @@ body,h1,h2,h3,p{margin: 0;}
 
 .projects >*{
     margin-top: 10px;
+    margin-left: 10px;
     background-color: var(--clr-primary-500);
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
 }
 
 #intro{
@@ -217,6 +228,29 @@ body,h1,h2,h3,p{margin: 0;}
     position: relative;
 }
 
+#htmlcss{
+    margin-top: 30px;
+    width: 200px;
+}
+
+#wordpress{
+    margin-top: 2px;
+    width: 180px;
+    height: 180px;
+    margin-left: 10px;
+}
+
+#camera{
+    margin-top: 10px;
+    height: 160px;
+    margin-left: 12px;
+}
+
+#adobe{
+    height: 175px;
+    margin-top: 5px;
+    margin-left: 12px;
+}
 
 .logo{
     color: var(--clr-primary-300);
@@ -243,9 +277,14 @@ body,h1,h2,h3,p{margin: 0;}
         margin-right: 100px;
         position: sticky;
     }
-    .split{flex-direction: row
+    h1,h2,h3{
+        max-width: 1450px;
     }
-    .split >*{flex-basis: 100%
+    .split{
+        flex-direction: row;
+        max-width: 1450px;
+    }
+    .split >*{flex-basis: 100%;
     }
     .nav-toggle-label{
         display: none;
@@ -264,6 +303,7 @@ body,h1,h2,h3,p{margin: 0;}
         display: flex;
         justify-content: flex-end;
         align-items: center;
+        max-width: 1450px;
         
     }
     nav a{
