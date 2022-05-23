@@ -18,11 +18,9 @@
 .font-green{color: var(--clr-primary-400);}
 .font-lightgreen{color: var(--clr-primary-500);}
 .nav-font{font-family: 'Exo 2', sans-serif;}
+.text-center{text-align: center;}
 
-
-.text-center{
-    text-align: center;
-}
+/*      */
 
 header,section{
     padding: 3rem 0;
@@ -71,12 +69,8 @@ p{
     margin-bottom: 1em;
 }
 
-#about-me{
-    border: 1px solid red;
-    max-width: 600px;
-    margin: auto;
-    
-}
+/*      */
+
 
 /* header og nav */
 
@@ -168,7 +162,7 @@ nav a:hover{
 }
 
 
-
+/*      */
 
 ::before,::after{box-sizing: border-box}
 body,h1,h2,h3,p{margin: 0;}
@@ -209,7 +203,17 @@ body,h1,h2,h3,p{margin: 0;}
 
 #intro{
     max-width: 480px;
+    margin: auto;
 }
+
+/* Tekst sektioner */
+
+#about-me{
+    border: 1px solid red;
+    max-width: 600px;
+    margin: auto;
+}
+
 
 /* billeder og logos */
 
@@ -279,10 +283,22 @@ body,h1,h2,h3,p{margin: 0;}
     }
     h1,h2,h3{
         max-width: 1450px;
+        margin: auto;
+        text-align: center;
     }
+
+    #intro{
+        margin-top: 100px;
+        min-width: 480px;
+        position: relative;
+        right: 300px;
+    }
+
     .split{
         flex-direction: row;
         max-width: 1450px;
+        border: 1px solid red;
+        margin: auto;
     }
     .split >*{flex-basis: 100%;
     }
