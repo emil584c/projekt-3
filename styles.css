@@ -288,14 +288,6 @@ a{text-decoration: none;}
     margin-top: 15px;
 }
 
-#cssanimation{
-    margin: auto;
-    height: 240px;
-    margin-left: 8px;
-    margin-top: 10px;
-}
-
-
 @media screen and (min-width: 760px){
     .skillsets {
         flex-direction: row;
@@ -401,6 +393,7 @@ a{text-decoration: none;}
         position: static;
     }
 }
+
 
 @media screen and (min-width: 1400px){
     .profil2{
