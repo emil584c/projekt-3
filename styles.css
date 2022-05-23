@@ -19,8 +19,11 @@
 .font-lightgreen{color: var(--clr-primary-500);}
 .nav-font{font-family: 'Exo 2', sans-serif;}
 .text-center{text-align: center;}
+.text-left{text-align: start; margin-bottom: 10px;}
+.stretch{min-height: 500px;}
 
 /*      */
+
 
 header,section{
     padding: 3rem 0;
@@ -34,6 +37,20 @@ header,section{
 .split{
     display: flex;
     flex-direction: column;
+    max-width: 1450px;
+}
+
+.split-images{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 450px;
+}
+
+.split-images >*{
+    max-height: 400px;
+    max-width: 400px;
+    margin-top: 20px;
 }
 
 body{
@@ -210,10 +227,11 @@ body,h1,h2,h3,p{margin: 0;}
 
 #about-me{
     border: 1px solid red;
-    max-width: 600px;
+    max-width: 800px;
     margin: auto;
 }
 
+a{text-decoration: none;}
 
 /* billeder og logos */
 
@@ -263,6 +281,20 @@ body,h1,h2,h3,p{margin: 0;}
     font-size: 40px;
 }
 
+#redesignfront{
+    height: 245px;
+    display: flex;
+    margin: auto;
+    margin-top: 15px;
+}
+
+#cssanimation{
+    margin: auto;
+    height: 240px;
+    margin-left: 8px;
+    margin-top: 10px;
+}
+
 
 @media screen and (min-width: 760px){
     .skillsets {
@@ -281,6 +313,32 @@ body,h1,h2,h3,p{margin: 0;}
         margin-right: 100px;
         position: sticky;
     }
+    .split-images{
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        max-width: 1200px;
+        max-height: 1000px;
+    }
+
+    .split-images >*{
+        width: 100%;
+    }
+
+    #spritesheet{
+        max-width: 500px;
+    }
+
+    .center-image{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+
     h1,h2,h3{
         max-width: 1450px;
         margin: auto;
@@ -291,13 +349,12 @@ body,h1,h2,h3,p{margin: 0;}
         margin-top: 100px;
         min-width: 480px;
         position: relative;
-        right: 300px;
+        right: 50px;
     }
 
     .split{
         flex-direction: row;
         max-width: 1450px;
-        border: 1px solid red;
         margin: auto;
     }
     .split >*{flex-basis: 100%;
@@ -334,5 +391,31 @@ body,h1,h2,h3,p{margin: 0;}
         margin-left: 3em;
         margin-bottom: 0;
     }
-    
+    #footerlist{
+        display: flex;
+        align-items: space-between;
+        justify-content: space-around;
+        list-style: none;
+    }
+    .profil2{
+        position: static;
+    }
 }
+
+@media screen and (min-width: 1400px){
+    .profil2{
+        position: relative;
+        right: 150px;
+    }
+    .profil{
+        position: relative;
+    }
+    #intro{
+        margin-top: 100px;
+        min-width: 480px;
+        position: relative;
+        right: 310px;
+    }
+
+}
+
