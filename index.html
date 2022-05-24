@@ -4,6 +4,7 @@
         <title>lind.gg portfolio</title>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
     </head>
     <body>
         <header class="bg-lightgreen">
@@ -53,17 +54,18 @@
             <section class="bg-white" id="aboutme">
                 <h2 class="font-green">About me</h2>
                 <div class="split">
-                    <div><p class="font-green" id="about-me">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem in voluptatem molestias, non adipisci enim molestiae, veritatis, dignissimos repellendus placeat assumenda! Quasi quia dolorum quisquam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem in voluptatem molestias, non adipisci enim molestiae, veritatis, dignissimos repellendus placeat assumenda! Quasi quia dolorum quisquam</p></div>
+                    <div><p class="font-green" id="about-me">Hi! My name is Emil, I'm 21 years old and studying in Odense. I'm an aspiring front end developer trying to find my place in the market. I have a passion for coding in HTML and CSS and I am hoping to learn javascript later on down the road. I also have an interest in creating content. I´m experienced in most Adobe programs, but i also enjoy the practical work such as filming or taking photos. In my free time I´m a down to earth guy who loves either spending time with friends or perfecting my craft in my hobby, which happens to be coding.</p></div>
                     <img class="profil2" src="images/profil2.png" alt="Picture of Emil">
                 </div>
             </section>
         </div>
         <div class="container">
-            <section class="bg-green">
+            <section class="bg-green" id="projects">
                 <h2 class="text-center font-white">Projects</h2>
+                <p class="text-center font-white">These are a handpicked bunch of my favorite projects. Click on them to learn more!</p>
                 <div class="split">
-                    <div class="projects font-white" id="projects">
-                        <a href="/projekt1.html"><div><h3 class="font-white nomargin">Redesign of Website</h3><img id="redesignfront" src="images/side1redesign.png" alt="picture of website redesign"></div></a>
+                    <div class="projects font-white">
+                        <a href="/projekt1.html"><div class="boxhover"><h3 class="font-white nomargin">Redesign of Website</h3><img id="redesignfront" src="images/side1redesign.png" alt="picture of website redesign"></div></a>
                         <a href="/projekt2.html"><div><h3 class="font-white nomargin">CSS Animation</h3><img id="cssanimation" src="images/logoprojekt.png" alt="picture of logo"></div></a>
                         <a href="/projekt3.html"><div id="groupuplogo"><h3 class="font-white nomargin">App Project</h3><img id="groupuplogomargin" src="/images/groupuplogo.JPG" alt="groupup app logo"></div></a>
                     </div>
@@ -72,24 +74,28 @@
                     <div class="projects font-white">
                         <a href="/projekt4.html"><div><h3 class="font-white nomargin">Exam Project</h3><div class="logo text-center" id="myportfoliowebsite">lind.gg<br>Portfolio<br>Website</div></div></a>
                         <a href="/projekt5.html"><div><h3 class="font-white nomargin">Video Project</h3><img id="peter" src="/images/peter.png" alt="picture of Peter with skateboard in hand"></div></a>
-                        <a href="/projekt6.html"><div><h3 class="font-white nomargin">Projekt 2</h3></div></a>
                     </div>
                 </div>
             </section>
         </div>
         <div class="container">
-            <section class="bg-white">
-                <footer class="split">
-                    <h2 class="font-green" id="contact">Contact</h2>
-                    <div><p class="font-green">I am always ready to answer questions about my work or possible projects in the future</p></div>
-                </footer>
-                <footer class="split">
-                    <ul id="footerlist">
-                        <li><a href="">emilwaellind@gmail.com</a></li>
-                        <li><a href=""></a>+45 42544888</li>
-                        <li><a href=""></a></li>
-
-                    </ul>
+            <section class="bg-white" id="contact">
+                <footer>
+                    <div class="footer-content">
+                        <h2>Contact</h2>
+                        <p>I am always ready to answer questions about my work or possible projects in the future</p>
+                        <ul class="socials">
+                            <li><a href="">emilwaellind@gmail.com</a></li>
+                            <li><a href="">+45 42544888</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-bottom">
+                        <p>Copyright © 2022 lind.gg</p>
+                    </div>
+                
+                
+    
+                    
                 </footer>
             </section>
         </div>
@@ -100,3 +106,4 @@
 
     </body>
 </html>
+

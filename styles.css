@@ -72,7 +72,6 @@ h1{
     line-height: 1;
     margin-bottom: 1em;
     text-align: center;
-    border: 1px solid red;
 }
 
 
@@ -83,14 +82,15 @@ h2,h3{
     line-height: 1;
     margin-bottom: 1em;
     text-align: center;
-    border: 1px solid red;
-    
+    padding-top: 2px;
+    padding-left: 5px;
 }
 
 p{
     font-family: sans-serif;
-    font-size: 1.3125rem;
+    font-size: 1.125rem;
     margin-bottom: 1em;
+    padding-left: 5px;
 }
 
 .nomargin{
@@ -98,7 +98,6 @@ p{
 }
 
 /*      */
-
 
 /* header og nav */
 
@@ -175,10 +174,18 @@ nav a{
     text-decoration: none;
     opacity: 0;
     transform: 250ms ease-in-out;
+    text-shadow:0 0 0.100em #F2F2F2,0 0 1em #809292;
+    position: relative;
 }
 
+
 nav a:hover{
-    color: blue;
+    color: #FEFEFE;
+}
+
+
+nav a:hover::after{
+    opacity: 1;
 }
 
 .nav-toggle:checked ~ nav {
@@ -192,7 +199,12 @@ nav a:hover{
 
 /*      */
 
-
+.line{
+    height: 2px;
+    max-width: 800px;
+    background-color: var(--clr-primary-500);
+    margin: 20px auto;
+}
 
 /* kasser */
 
@@ -212,19 +224,65 @@ nav a:hover{
     padding: 10px;
 }
 
-
-
 #intro{
     max-width: 480px;
     margin: auto;
 }
 
+footer{
+    height: auto;
+    width: 100%;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3{
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+}
+
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.socials li{
+    margin: 0 10px;
+}
+
+.socials li a{
+    text-decoration: none;
+    color: var(--clr-primary-400);
+    margin: auto;
+}
+
+.footer-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
 /* Tekst sektioner */
 
 #about-me{
-    border: 1px solid red;
-    max-width: 800px;
+    max-width: 700px;
     margin: auto;
+    padding-top: 20px;
 }
 
 
@@ -236,14 +294,11 @@ a{text-decoration: none;}
     max-width: 300px;
     display: block;
     margin: auto;
-    border: 1px solid red;
 }
 
 .profil2{
     max-width: 300px;
-    display: block;
     margin: auto;
-    border: 1px solid red;
     position: relative;
 }
 
@@ -313,6 +368,7 @@ a{text-decoration: none;}
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .projects >*{
@@ -330,6 +386,18 @@ a{text-decoration: none;}
     margin-top: 25px;
 }
 
+#groupuplogo{
+    display: flex;
+    flex-direction: column;
+}
+
+#groupuplogomargin{
+    margin-top: 25%;
+    padding: 0 5px;
+}
+
+
+
 @media screen and (min-width: 760px){
     .skillsets {
         flex-direction: row;
@@ -346,7 +414,7 @@ a{text-decoration: none;}
     }
     .profil2{
         margin-right: 100px;
-        position: sticky;
+        left: 50px;
     }
     .split-images{
         margin-top: 20px;
@@ -355,7 +423,6 @@ a{text-decoration: none;}
         max-width: 1200px;
         max-height: 1000px;
         height: 100%;
-        border: 1px red solid;
         align-items: center;
         justify-content: center;
         margin: auto;
@@ -390,7 +457,13 @@ a{text-decoration: none;}
         text-align: center;
     }
 
+    p{
+        font-size: 1.3125rem;
+    }
+
     #intro{
+        margin: auto;
+        text-align: left;
         margin-top: 100px;
         min-width: 480px;
         position: relative;
@@ -402,14 +475,22 @@ a{text-decoration: none;}
         max-width: 1450px;
         margin: auto;
     }
-    .split >*{flex-basis: 100%;
+    .split >*{
+        flex-basis: 100%;
     }
+
     .nav-toggle-label{
         display: none;
     }
+    html,body{
+        background-color: #809292;
+    }
+
     header{
         display:grid;
         grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
+        max-width: 1450px;
+        margin: auto;
         
     }
     .logo{
@@ -436,24 +517,22 @@ a{text-decoration: none;}
         margin-left: 3em;
         margin-bottom: 0;
     }
-    #footerlist{
-        display: flex;  
-        list-style: none;
+    .profil{
+        left: 30px;
     }
-    .profil2{
-        position: static;
-    }
-    
-}
 
+    #about-me{
+        position: relative;
+        left: 100px;
+        z-index: 999;
+    }
+}
 
 @media screen and (min-width: 1400px){
     .profil2{
         position: relative;
-        right: 150px;
-    }
-    .profil{
-        position: relative;
+        left: 0;
+        right: 50px;
     }
     #intro{
         margin-top: 100px;
@@ -466,13 +545,5 @@ a{text-decoration: none;}
 
 
 
-#groupuplogo{
-    display: flex;
-    flex-direction: column;
-}
 
-#groupuplogomargin{
-    margin-top: 25%;
-    padding: 0 5px;
-}
 
