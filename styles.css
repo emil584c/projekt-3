@@ -21,9 +21,12 @@
 .text-center{text-align: center;}
 .text-left{text-align: start; margin-bottom: 10px;}
 .stretch{min-height: 500px;}
+.margin-auto{margin: auto;}
 
 /*      */
 
+::before,::after{box-sizing: border-box}
+body,h1,h2,h3,p{margin: 0;}
 
 header,section{
     padding: 3rem 0;
@@ -43,8 +46,9 @@ header,section{
 .split-images{
     display: flex;
     flex-direction: column;
-    margin: auto;
     max-width: 450px;
+    margin: auto;
+    align-items: center;
 }
 
 .split-images >*{
@@ -71,6 +75,8 @@ h1{
     border: 1px solid red;
 }
 
+
+
 h2,h3{
     font-family: 'Exo 2', sans-serif;
     font-weight: 700;
@@ -78,12 +84,17 @@ h2,h3{
     margin-bottom: 1em;
     text-align: center;
     border: 1px solid red;
+    
 }
 
 p{
     font-family: sans-serif;
     font-size: 1.3125rem;
     margin-bottom: 1em;
+}
+
+.nomargin{
+    margin-bottom: 0;
 }
 
 /*      */
@@ -150,7 +161,7 @@ nav{
 nav ul{
     margin: 0;
     padding: 0;
-    list-style: 0;
+    list-style: none;
 }
 
 nav li{
@@ -181,8 +192,7 @@ nav a:hover{
 
 /*      */
 
-::before,::after{box-sizing: border-box}
-body,h1,h2,h3,p{margin: 0;}
+
 
 /* kasser */
 
@@ -202,21 +212,7 @@ body,h1,h2,h3,p{margin: 0;}
     padding: 10px;
 }
 
-.projects{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-}
 
-.projects >*{
-    margin-top: 10px;
-    margin-left: 10px;
-    background-color: var(--clr-primary-500);
-    width: 300px;
-    height: 300px;
-}
 
 #intro{
     max-width: 480px;
@@ -230,6 +226,7 @@ body,h1,h2,h3,p{margin: 0;}
     max-width: 800px;
     margin: auto;
 }
+
 
 a{text-decoration: none;}
 
@@ -288,6 +285,51 @@ a{text-decoration: none;}
     margin-top: 15px;
 }
 
+#cssanimation{
+    margin-top: 10px;
+    margin-left: 25px;
+}
+
+#groupuplogo{
+    display: flex;
+    flex-direction: column;
+}
+
+#groupuplogomargin{
+    margin-top: 25%;
+    padding: 0 5px;
+}
+
+#peter{
+    margin-left: 62px;
+}
+
+.groupup{
+    height: 300px;
+}
+
+.projects{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects >*{
+    margin-top: 10px;
+    margin-left: 10px;
+    background-color: var(--clr-primary-500);
+    width: 300px;
+    height: 300px;
+}
+
+#side1redesign{
+    height: 500px;
+}
+#myportfoliowebsite{
+    margin-top: 25px;
+}
+
 @media screen and (min-width: 760px){
     .skillsets {
         flex-direction: row;
@@ -295,26 +337,37 @@ a{text-decoration: none;}
         margin: auto;
     }
     .projects{
-        flex-direction: row;
-        justify-content: space-around;
-        max-width: 800px;
-        align-items: center;
         margin: auto;
+        flex-direction: row;
+        justify-content: center;
+        max-width: 1000px;
+        align-items: center;
+        
     }
     .profil2{
         margin-right: 100px;
         position: sticky;
     }
     .split-images{
+        margin-top: 20px;
         display: flex;
         flex-direction: row;
-        margin: auto;
         max-width: 1200px;
         max-height: 1000px;
+        height: 100%;
+        border: 1px red solid;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
     }
 
     .split-images >*{
         width: 100%;
+    }
+    
+    .text-left{
+        max-width: 1200px;
+        margin: auto;
     }
 
     #spritesheet{
@@ -325,7 +378,7 @@ a{text-decoration: none;}
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 100%;
+        width: auto;
         height: auto;
         margin-left: 20px;
         margin-top: 20px;
@@ -384,14 +437,13 @@ a{text-decoration: none;}
         margin-bottom: 0;
     }
     #footerlist{
-        display: flex;
-        align-items: space-between;
-        justify-content: space-around;
+        display: flex;  
         list-style: none;
     }
     .profil2{
         position: static;
     }
+    
 }
 
 
@@ -410,5 +462,17 @@ a{text-decoration: none;}
         right: 310px;
     }
 
+}
+
+
+
+#groupuplogo{
+    display: flex;
+    flex-direction: column;
+}
+
+#groupuplogomargin{
+    margin-top: 25%;
+    padding: 0 5px;
 }
 
