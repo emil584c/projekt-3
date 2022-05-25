@@ -393,9 +393,14 @@ a{text-decoration: none;}
 
 #groupuplogomargin{
     margin-top: 25%;
+    margin-left: 5px;
     padding: 0 5px;
 }
 
+.hover:hover{
+    background-color: #80B792;
+    height: 100%;
+}
 
 
 @media screen and (min-width: 760px){
