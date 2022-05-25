@@ -1,49 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>Video Project</title>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="styles.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-</head>
-<body>
-    <header class="bg-lightgreen">
-        <div class="logo">
-            <a class="font-white" href="/index.html">lind.gg</a>
+    <head>
+        <title>Video Project</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+    <body>
+        <header class="bg-lightgreen">
+            <div class="logo">
+                <a class="font-white" href="/index.html">lind.gg</a>
+            </div>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <nav>
+                <ul class="nav-font">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/index.html#aboutme">About me</a></li>
+                    <li><a href="/index.html#projects">Projects</a></li>
+                    <li><a href="/index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <label for="nav-toggle" class="nav-toggle-label">
+                <span></span>
+            </label>
+        </header>
+        <div class="container">
+            <section class="bg-green stretch">
+                <h2 class="font-white text-left">Video editing project</h2>
+                <div class="split">
+                    <p class="font-white text-left">In this project our groups task was to shoot a video of one of our hobbies. We decided to make an interview style video of Peters skating hobby. We all helped shooting the video, but the editing was done entirely by me.<br> The video can be seen below.</p>
+                </div>
+                <div class="line"></div>
+                <div class="split-images">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/aabEG-gG9uU" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </section>
         </div>
-        <input type="checkbox" id="nav-toggle" class="nav-toggle">
-        <nav>
-            <ul class="nav-font">
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="/index.html#aboutme">About me</a></li>
-                <li><a href="/index.html#projects">Projects</a></li>
-                <li><a href="/index.html#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <label for="nav-toggle" class="nav-toggle-label">
-            <span></span>
-        </label>
-    </header>
-    <div class="container">
-        <section class="bg-green stretch">
-            <h2 class="font-white text-left">Video editing project</h2>
-            <div class="split">
-                <p class="font-white text-left">In this project our groups task was to shoot a video of one of our hobbies. We decided to make an interview style video of Peters skating hobby. We all helped shooting the video, but the editing was done entirely by me.<br> The video can be seen below.</p>
-            </div>
-            <div class="line"></div>
-            <div class="split-images">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/aabEG-gG9uU" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-        </section>
-    </div>
-    <div class="container">
-        <section class="bg-white">
-            <div class="split">
-                <h2 class="font-green">Contact</h2>
-                <div><p class="font-green">I am always ready to answer questions about my work or possible projects in the future</p></div>
-                <p>emilwaellind@gmail.com</p>
-                <p>42544888</p>
-            </div>
-        </section>
-    </div>
-
+        <div class="container">
+            <section class="bg-white" id="contact">
+                <footer>
+                    <div class="footer-content">
+                        <h2>Contact</h2>
+                        <p>I am always ready to answer questions about my work or possible projects in the future</p>
+                        <ul class="socials">
+                            <li><a href="">emilwaellind@gmail.com</a></li>
+                            <li><a href="">+45 42544888</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-bottom">
+                        <p>Copyright © 2022 lind.gg</p>
+                    </div>
+                </footer>
+            </section>
+        </div>
+    </body>
+</html>

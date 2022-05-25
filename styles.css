@@ -74,8 +74,6 @@ h1{
     text-align: center;
 }
 
-
-
 h2,h3{
     font-family: 'Exo 2', sans-serif;
     font-weight: 700;
@@ -178,11 +176,9 @@ nav a{
     position: relative;
 }
 
-
 nav a:hover{
     color: #FEFEFE;
 }
-
 
 nav a:hover::after{
     opacity: 1;
@@ -195,7 +191,6 @@ nav a:hover::after{
 .nav-toggle:checked ~ nav a{
     opacity: 1;
 }
-
 
 /*      */
 
