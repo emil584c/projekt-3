@@ -46,9 +46,9 @@ header,section{
 .split-images{
     display: flex;
     flex-direction: column;
-    max-width: 450px;
     margin: auto;
     align-items: center;
+    border: red 1px solid;
 }
 
 .split-images >*{
@@ -181,17 +181,32 @@ nav a{
     text-decoration: none;
     opacity: 0;
     transition-duration: 250ms;
-    text-shadow:0 0 0.100em #F2F2F2,0 0 1em #809292;
     position: relative;
 }
 
-nav a:hover{
-    color: #FEFEFE;
+
+
+
+.hoverunder{
+    padding-bottom: 1px;
+    display: inline-block;
+    position: relative;
 }
 
-nav a:hover::after{
-    opacity: 1;
+.hoverunder::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 3px;
+    width: 0;
+    height: 2px;
+    background-color: var(--clr-primary-300);
 }
+
+.hoverunder:hover::before{
+    width: 100%;
+}
+
 
 .nav-toggle:checked ~ nav {
     transform: scale(1,1)
@@ -408,7 +423,7 @@ a{text-decoration: none;}
 }
 
 .hover:hover{
-    background-color: #80B792;
+    background-color: #80b7927e;
     height: 100%;
 }
 
@@ -417,7 +432,16 @@ a{text-decoration: none;}
     width: 200px;
     background-color: var(--clr-primary-500);
     text-align: center;
-    border: green 4px solid;
+    border: green 1px solid;
+}
+
+.knap:hover{
+    background-color: #80b7927e;
+    height: 100%;
+}
+
+.exo{
+    font-family: 'Exo 2', sans-serif;
 }
 
 @media screen and (min-width: 760px){
@@ -455,7 +479,7 @@ a{text-decoration: none;}
     }
     
     .text-left{
-        max-width: 1200px;
+        max-width: 800px;
         margin: auto;
     }
 
@@ -495,7 +519,7 @@ a{text-decoration: none;}
 
     .split{
         flex-direction: row;
-        max-width: 1450px;
+        max-width: 1430px;
         margin: auto;
     }
     .split >*{
@@ -541,7 +565,7 @@ a{text-decoration: none;}
         margin-bottom: 0;
     }
     .profil{
-        left: 30px;
+        left: 20px;
     }
 
     #about-me{
@@ -570,3 +594,6 @@ a{text-decoration: none;}
 
 
 
+.max-width{
+    max-width: 1200px;
+}
