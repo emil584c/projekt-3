@@ -189,7 +189,7 @@ nav a{
 
 .hoverunder{
     padding-bottom: 1px;
-    display: inline-block;
+  
     position: relative;
 }
 
@@ -215,6 +215,10 @@ nav a{
 .nav-toggle:checked ~ nav a{
     opacity: 1;
 }
+
+nav a:hover::after{
+    opacity: 1;
+    }
 
 /*      */
 
