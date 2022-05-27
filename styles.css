@@ -48,7 +48,6 @@ header,section{
     flex-direction: column;
     margin: auto;
     align-items: center;
-    border: red 1px solid;
 }
 
 .split-images >*{
@@ -183,8 +182,6 @@ nav a{
     transition-duration: 250ms;
     position: relative;
 }
-
-
 
 
 .hoverunder{
